@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+body {
+  background-color: #333;
+}
+h1 {
+  text-align: center;
+  color: white;
+  padding-bottom: 15px;
+}
+.container {
+  width: 70%;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.inbox {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+}
+.inbox_people {
+  width: 35%;
+}
+.inbox_people > p {
+  font-size: 25px;
+  color: white;
+  padding-bottom: 5px;
+}
+.chat_ib {
+  margin: 5px;
+  margin-left: 0;
+  padding: 10px;
+  background-color: #6d59f0;
+  color: white;
+  font-size: 95%;
+  font-weight: bold;
+  text-align: left;
+  width: 70%;
+  border-radius: 5px;
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.inbox_messages {
+  display: flex;
+  flex-direction: column;
+  background-color: #7162d9;
+  border: solid 2px white;
+  /* border-radius: 15px; */
+  height: 80vh;
+}
+.messages_history {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+.sent_message,
+.received_message {
+  border-radius: 10px;
+  width: 50%;
+  margin: 5px;
+  padding: 5px 8px;
+  color: white;
+  /* text-align: center; */
+}
+.sent_message,
+.received_message > p {
+  font-size: 16px;
+}
+.sent_message {
+  align-self: flex-end;
+  text-align: right;
+  background-color: white;
+  color: black;
+}
+.received_message {
+  align-self: flex-start;
+  text-align: left;
+  background-color: #424242;
+  color: #fce362;
+}
+.message_info {
+  font-size: 10px;
+  font-weight: lighter;
+}
+.fallback {
+  height: 10%;
+  color: whitesmoke;
+  padding: 8px 0;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+.message_form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 20px;
+}
+.message_form_input,
+.message_form_button {
+  border: none;
+  font-size: 18px;
+  padding: 20px 0;
+}
+.message_form_input {
+  width: 70%;
+  text-align: center;
+  font-weight: bold;
+}
+.message_form_button {
+  background-color: #777877;
+  color: white;
+  font-weight: bold;
+  width: 25%;
+}
+.message_form_button:hover {
+  background-color: white;
+  color: #4d6aff;
+}
