@@ -2,7 +2,7 @@ const express = require("express");
 const socket = require("socket.io");
 
 // App setup
-const PORT = 5000;
+const PORT = 5000 | process.env.PORT;
 const app = express();
 const server = app.listen(PORT, function () {
     console.log(`URL Below:`);
